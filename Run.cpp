@@ -10,11 +10,16 @@
 #include"./OverWrite/OverwriteTest.h"
 #include"./Hide/HideTest.h"
 #include"./Hide/HideTest2.h"
+#include"./IO/Input.h"
+#include"./Pointer/PointerTest.h"
 using namespace std;
 using namespace Overwrite;
 using namespace Hide;
+using namespace IO;
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
+
 // 静态的多态，overload 重载在参数有冲突的时候编译器会直接提醒报错。
 //	Overload::OverloadTest testLoad;
 //
@@ -49,6 +54,13 @@ int main(int argc, char** argv) {
 //
 //	delete(hideTest);
 //	delete(hideTest2);
+
+//IO
+//	Input a;
+//	a.getLine();
+//	a.getChar();
+
+	testFunction();
 
 	return 0;
 }
